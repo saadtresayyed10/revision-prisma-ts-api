@@ -1,5 +1,6 @@
 import express from "express";
 import authorRoutes from "../routes/author.routes";
+import bookRoutes from "../routes/book.routes";
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/authors", authorRoutes);
+app.use("/api/books", bookRoutes);
 
 app.listen(3000, () => {
   console.log("Server running on port: ", 3000);
