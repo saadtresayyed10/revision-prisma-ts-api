@@ -69,7 +69,7 @@ export const updateBook = async (req, res) => {
 };
 
 //Delete book
-export const deleteAuthor = async (req, res) => {
+export const deleteBook = async (req, res) => {
   try {
     const bookId = req.params.id;
     const book = await bookClient.delete({
