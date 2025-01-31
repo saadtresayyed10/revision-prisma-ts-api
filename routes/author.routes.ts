@@ -11,8 +11,8 @@ const authorRoutes = Router();
 
 authorRoutes.get("/", getAllAuthor);
 authorRoutes.get("/:id", getSingleAuthor);
-authorRoutes.get("/", addAuthor);
-authorRoutes.get("/:id", updateAuthor);
-authorRoutes.get("/:id", deleteAuthor);
+authorRoutes.post("/", addAuthor);
+authorRoutes.put("/:id", updateAuthor);
+authorRoutes.delete("/:id", deleteAuthor);
 
 export default authorRoutes;
